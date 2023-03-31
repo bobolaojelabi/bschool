@@ -10,34 +10,81 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+      <!--bootstrap link-->
+    <link rel="stylesheet" href="%PUBLIC_URL%/bootstrap/css/bootstrap.min.css">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="%PUBLIC_URL%/images/logo3.png" alt="logo">
+        </a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Vacancy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#foot">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <div class="container-fluid">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <div class="row" style="background-image:url('%PUBLIC_URL%/images/school99.jpg'); height:500px">
+        <div style="background-color:rgba(0,0,0,0.5); height:500px;" class="position-relative" id="intro">
+          
+        </div>
+
+      </div>
+
+      <marquee class="bg-secondary">Welcome to Bob elementry school where <b>Your child is our priority<b>:::&nbsp &nbsp
+        AMISSION IS ONGOING FOR THE 2022/23 SESSION!!!:::&nbsp &nbsp
+        Proviiding the best basic education in a world class environment.
+      </marquee>
+
+      <div class="row justify-content-center pt-4" id="about">
+
+      </div>
+      
+      <div class="row justify-content-between bg-warning mt-4" id="why">
+
+      </div>
+
+      <div class="row justify-content-center my-5">
+        <div class="col-md-10" id="locate">
+
+        </div>
+      </div>
+
+      <div class="row bg-light p-4" id="contact">
+
+      </div>
+
+      
+        <div class="row bg-dark text-white p-4" id="foot">
+
+        </div>
+      
+
+    </div>
+
+    <script src="%PUBLIC_URL%/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
